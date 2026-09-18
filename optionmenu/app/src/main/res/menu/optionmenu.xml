@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="HOME"
+        android:id="@+id/menu_home" />
+    <item android:title="profile"
+        android:id="@+id/menu_profile"/>
+</menu>

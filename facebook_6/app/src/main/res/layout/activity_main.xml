@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="26dp"
+    android:background="#1877F2">
+
+    <TextView
+        android:id="@+id/facebookLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facebook"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/facebookLogo"
+        android:layout_marginTop="60dp"
+        android:hint="Mobile number or email"
+        android:background="#eeeeee"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailInput"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:background="#eeeeee"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="4dp" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_marginTop="16dp"
+        android:text="Log In"
+        android:background="#1877f2"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

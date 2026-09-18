@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="367dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sub"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mul"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="div"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="235dp"
+        android:layout_height="126dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762">
+
+        <EditText
+            android:id="@+id/n1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:hint="enter the first number"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/n2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:hint="enter the second number"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.465" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
